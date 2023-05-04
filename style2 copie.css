@@ -42,7 +42,7 @@ nav li:hover{
 }
 header{
     background:url(assets/img/bg.jpg) center/cover;
-    min-height: 450px;
+    height: 450px;
     padding: 0px 0px;
 }
 .main-header{
@@ -64,7 +64,6 @@ header{
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 10px 30px;
-    cursor: pointer;
 }
 .main-header button:hover{
     background: whitesmoke;
@@ -85,6 +84,7 @@ header{
 .icon-part{
     background:rgba(22, 22, 22) ;
     color: whitesmoke;
+    height: 400px;
     display: flex;
     align-items: center;
 }
@@ -100,10 +100,7 @@ header{
     text-align: center;
     align-items: center;
     margin: 20px;
-    justify-content: space-around;
 }
-
-
 .list-icon-part h3{
     text-transform: uppercase;
     margin-top: 20px;
@@ -119,13 +116,7 @@ header{
     font-size:0.6rem;
     padding: 9px 32px;
     margin-top: 20px;
-    cursor: pointer;
 }
-.list-icon-part button:hover{
-    background: whitesmoke;
-    color: rgb(22, 22, 22);
-}
-
 .header-news{
     display:grid;
     grid-template-columns: 60% 40%;
@@ -275,62 +266,6 @@ footer li:nth-child(7){
    width: 10%;
 }
 
-@media only screen and (max-width: 950px) {
-    .contact-medias::before{
-        height: 0;}
-    .medias-text{
-        text-align: center;
-    }
-    .contact-medias {
-        display: block;
-
-}
-}
-@media only screen and (max-width: 800px) {
-    html,body{
-        padding: 0;
-    }
-    
-    nav{
-        display: none;
-    }
-    .main-header h1{
-        font-size: 1rem;
-    }
-    .header-text p {
-        width: 100%;
-    }
-    .header-text{
-        height: 100px;
-    }
-
-    .icon-part-container{
-        display: block;
-        align-items: center;
-    }
-    .list-icon-part{
-        margin: 0 auto;
-        width: 60%;
-        display: block;
-    }
-    .header-news{
-        display: block;
-        text-align: center;
-        margin-top: 40px;
-    }
-    .main-new-container{
-        display: block;
-
-    }
-    .new{
-        margin: 10px auto 10px;
-        width: 70%;
-
-    }
-   .contact{
-    display: none;
-    }
-    .link{
-        position: initial;
-    }
+@media only screen and (max-width :990px) {
+    body{background: read;}
 }
