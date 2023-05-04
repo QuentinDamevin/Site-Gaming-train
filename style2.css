@@ -18,6 +18,7 @@ nav li{
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
+    position: relative;
 }
 nav li:last-child{
     border: none;
@@ -25,6 +26,16 @@ nav li:last-child{
     background: #E0DFE1;
     padding: 7px 15px;
     letter-spacing: 1px;
+}
+nav li:hover::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: -80%;
+    left: 50%;
+    transform: translate(-50%);
+    background: blueviolet;
+    width: 100%;
 }
 nav li:hover{
     color: blueviolet;
@@ -79,7 +90,8 @@ header{
 }
 .icon-part-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
 }
 .list-icon-part{
     display: flex;
@@ -87,6 +99,7 @@ header{
     width: 20%;
     text-align: center;
     align-items: center;
+    margin: 20px;
 }
 .list-icon-part h3{
     text-transform: uppercase;
