@@ -70,6 +70,12 @@ header{
     background: whitesmoke;
     color: rgb(22, 22, 22);
 }
+.main-header img{
+    width: 100%;
+}
+.main-header h1{
+    text-align: center;
+}
 .header-text{
     text-align: center;
     margin: 0 auto;
@@ -147,6 +153,7 @@ header{
     font-weight: bold;
     letter-spacing: 2px;
     padding: 7px 10px;
+    color: rgb(22, 22, 22);
 }
 .main-new-container{
     display: flex;
@@ -333,4 +340,9 @@ footer li:nth-child(7){
     .link{
         position: initial;
     }
+
 }
+@media only screen and (max-width: 500px) {
+    .main-header img{
+        width: 100%;
+    }
